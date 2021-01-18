@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
 from kodi_six import xbmc, xbmcgui
 
@@ -10,9 +10,9 @@ def log(x):
 
 
 channel = xbmc.getInfoLabel('ListItem.Label')
-channel = channel.decode("utf8")
-channel = channel.encode("utf8")
-channel = urllib.quote_plus(channel)
+#channel = channel.decode("utf8")
+#channel = channel.encode("utf8")
+channel = urllib.parse.quote_plus(channel)
 
 try:
 

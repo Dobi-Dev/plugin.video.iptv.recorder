@@ -48,7 +48,7 @@ start_time = start_time.replace(tzinfo=None)
 
 #log((channel, start_time))
 
-conn = sqlite3.connect(xbmc.translatePath('special://profile/addon_data/plugin.video.iptv.recorder/xmltv.db'), detect_types=sqlite3.PARSE_DECLTYPES|sqlite3.PARSE_COLNAMES)
+conn = sqlite3.connect(xbmcvfs.translatePath('special://profile/addon_data/plugin.video.iptv.recorder/xmltv.db'), detect_types=sqlite3.PARSE_DECLTYPES|sqlite3.PARSE_COLNAMES)
 cursor = conn.cursor()
 try:
     #log(channel)
