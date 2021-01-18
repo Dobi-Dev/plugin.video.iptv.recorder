@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 import locale
 import time
 from datetime import datetime
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
 from kodi_six import xbmc, xbmcgui
 
@@ -15,9 +15,9 @@ def log(x):
 
 
 def escape(value):
-    value = value.decode("utf8")
-    value = value.encode("utf8")
-    return urllib.quote_plus(value)
+    #value = value.decode()
+    #value = value.encode()
+    return urllib.parse.quote_plus(value)
 
 
 def get_format():

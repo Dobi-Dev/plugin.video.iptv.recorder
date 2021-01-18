@@ -1,3 +1,9 @@
+version 0.3.0
+- Compatibility with Kodi Matrix RC1.
+- Add some missing translations.
+- Fix wrong encoding
+- Fix wrong decoding
+
 version 0.2.0
 - Compatibility with Kodi Matrix.
 - Add some missing translations.
